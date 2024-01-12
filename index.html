@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Body Evolution</title>
+</head>
+<style>
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    df-messenger {
+        --df-messenger-bot-message: #76bd1d;
+        --df-messenger-button-titlebar-color: white;
+        --df-messenger-button-titlebar-font-color: black;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: #000000;
+        --df-messenger-send-icon: #76bd1d;
+        --df-messenger-user-message: #b0b8af;
+    }
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./Build Muscle _ Body Evolution.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+    </video>
+</body>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger chat-icon="https://bodyevolution.pk/wp-content/themes/gymee/assets/img/logo/logo-white.png"
+    intent="WELCOME" chat-title="Body-Evolution-Gym 🤖" agent-id="50c21c54-a8ed-4362-a10d-e92a742bd5e8"
+    language-code="en"></df-messenger>
+
+</html>
